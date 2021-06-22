@@ -1,0 +1,97 @@
+.movie {
+  background-color: white;
+  margin: 1rem;
+  margin-left: 121px;
+  width: 282px;
+  height: 348px;
+  background: #ffffff;
+
+  border: 1px solid #e1e3e6;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie img {
+  width: 280px;
+  height: 302px;
+  max-width: 100%;
+}
+.movie-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+}
+.movie-information h3 {
+  left: 86px;
+  top: 313px;
+
+  /* Body 2 / Body 2 */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 26px;
+  /* or 162% */
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #000000;
+}
+#circle {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  width: 21px;
+  height: 20px;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 21px;
+}
+.parent-modal {
+  margin-left: 608px;
+  margin-top: 300px;
+  width: 583px;
+  height: 474px;
+  background-color: white;
+}
+
+.parent-modal img {
+  width: 266px;
+  height: 389px;
+  margin-left: 27px;
+}
+/* .ReactModal {
+  position: fixed;
+  inset: 0px;
+} */
+.ReactModal__Overlay--after-open {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+input {
+  height: 30px;
+  padding-left: 21px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABDElEQVQ4jbXUsS8EQRzF8c/tIZfQUVCIINdIaPCfiEYncbSiEM3VIqKlQkNNtAQVxYVCoqLSKLRqirmNSG73ZmW9cvLm+375zctQsioZ53UsYQ6DeMcNTvBRJKCKHVxjAcPoxRhW0cJykWlPsZnjqbWn3IgBNrAb4evBJWbzTAke0R+TjGmcZYG001r4jAQ+YURYQUdgHc+RsFSvGM0CfsmuUJaSTndS4AumCgIn8JaX9oCBSNgMzruZVrAXAUtrM9/NWBFKu5XjqQnlv/OzrlxVsY1bLArV6MM41oS1XAmPeBQLhUk0cYF7ocTrwkeR4Pgv0DxVcPAf0P2yoQkO29BmGcAU2sRQWcBf+gbIPy2kTEVxPQAAAABJRU5ErkJggg==)
+    top left no-repeat;
+  border: 1px solid #c0c4cc;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 7px;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-right: 1%;
+}
