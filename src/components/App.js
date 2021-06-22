@@ -8,7 +8,7 @@ const MOVIE_DOMAIN =
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
-  const [filteredCountries, setFilteredCountries] = useState([]);
+  const [filteredMovies, setFilteredMovies] = useState([]);
 
   useEffect(() => {
     fetch(MOVIE_DOMAIN)
@@ -19,7 +19,7 @@ const App = () => {
       });
   }, []);
   useEffect(() => {
-    setFilteredCountries(
+    setFilteredMovies(
       movies.filter((movie) =>
         movie.title.toLowerCase().includes(search.toLowerCase())
       )
@@ -49,8 +49,8 @@ const App = () => {
       </div>
 
       <div className="movie-container">
-        {filteredCountries.length > 0 &&
-          filteredCountries.map((movie) => <Movie key={movie.id} {...movie} />)}
+        {filteredMovies.length > 0 &&
+          filteredMovies.map((movie) => <Movie key={movie.id} {...movie} />)}
       </div>
     </div>
   );

@@ -76,7 +76,7 @@
   inset: 0px;
 } */
 .ReactModal__Overlay--after-open {
-  background-color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 input {
   height: 30px;
